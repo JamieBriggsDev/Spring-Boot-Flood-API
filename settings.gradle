@@ -1,1 +1,6 @@
 rootProject.name = 'flood-api'
+
+
+include 'flood-data'
+include 'flood-data:api'
+include 'flood-data:service'
