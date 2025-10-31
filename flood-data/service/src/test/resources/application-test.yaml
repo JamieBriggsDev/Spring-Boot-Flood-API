@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Flood API Test
+  datasource:
+    url: jdbc:sqlite:./src/main/resources/db/flood.db
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
