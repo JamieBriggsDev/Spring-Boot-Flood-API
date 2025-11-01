@@ -26,10 +26,6 @@ public class Rainfall {
   @Column(name = "StationId")
   private long stationId;
 
-  @ManyToOne
-  @JoinColumn(name = "StationId", insertable = false, updatable = false)
-  private StationName station;
-
   @Id
   @Column(name = "TimeStamp")
   private LocalDate timestamp;
